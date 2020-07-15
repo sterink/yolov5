@@ -1,0 +1,18 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Download command:  python -c "from yolov5.utils.google_utils import *; gdrive_download('1n_oKgR81BJtqk75b00eAjdv03qVCQn2f', 'coco128.zip')"
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../hw_litter_db/VOC2007/trash_train.txt
+val: ../hw_litter_db/VOC2007/trash_val.txt # 128 images
+
+# number of classes
+nc: 44
+
+# class names
+names: ['fast_food_box','paper_works','charge_pal','leftover_food ','bag','ash-bin','plastic_ware','plastic_toy','plastic_hanger','big_bone','dry_cell','curier_bags','plugs_cables ','old_clothes','pop_can','pillow','cuticle','dolls','stained_plastic','stained_paper','toiletries','cigarette_butt ','toothpick','glassware','cutting-board','chopsticks','paper_box','flowerpot','tea_leave','vegetable','eggshell','spice_jar','ointment','expired_drugs','winebottle','metalic_kitchenware','metalware','metal_food_can','pan','ceramic_vessels ','shoe','oil_containers','drink_bottle','fish_bone']
